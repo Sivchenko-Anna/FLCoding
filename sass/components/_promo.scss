@@ -1,0 +1,18 @@
+.promo {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.promo__wrapper {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.promo__content {
+	padding-right: 65px;
+}
+
+.promo__buttons>* {
+	margin-right: 44px;
+}
