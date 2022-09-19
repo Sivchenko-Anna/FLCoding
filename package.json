@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Sivchenko-Anna/FLCoding/issues"
   },
-  "homepage": "https://github.com/Sivchenko-Anna/FLCoding#readme"
+  "homepage": "https://github.com/Sivchenko-Anna/FLCoding#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }
