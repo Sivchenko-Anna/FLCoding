@@ -533,10 +533,82 @@ h5 {
   display: inline-block;
 }
 
+.icon-square {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-square_purple {
+  background-color: #7752BE;
+}
+.icon-square_yellow {
+  background-color: #FAB005;
+}
+.icon-square_red {
+  background-color: #F03E3D;
+}
+.icon-square_blue {
+  background-color: #4DADF7;
+}
+
 .ico_play {
   background-image: url("../../img/icons/play.svg");
   width: 18px;
   height: 19px;
+}
+
+.ico_arrow {
+  background-image: url("../../img/icons/arrow.svg");
+  width: 12px;
+  height: 17px;
+}
+
+.ico_snake {
+  background-image: url("../../img/icons/snake.svg");
+  width: 18px;
+  height: 14px;
+}
+
+.ico_heart {
+  background-image: url("../../img/icons/heart.svg");
+  width: 17px;
+  height: 16px;
+}
+
+.ico_time {
+  background-image: url("../../img/icons/time.svg");
+  width: 15px;
+  height: 17px;
+}
+
+.tags {
+  display: flex;
+}
+.tags > * {
+  margin-right: 7px;
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0 14px;
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2.8rem;
+  color: #544837;
+}
+.tag_selected {
+  background-color: #FF9900;
+  color: #ffffff;
+}
+.tag_bordered {
+  border: 1px solid #D7D7D7;
+}
+.tag_colored {
+  background-color: #F5F5F5;
 }
 
 .wrapper {
@@ -640,6 +712,59 @@ h5 {
 }
 .navigation__link:hover {
   color: #FF9900;
+}
+
+.tools__wrapper {
+  padding-bottom: 90px;
+  background-image: url("../img/backgrounds/tools-bg.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tools__title {
+  max-width: 462px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.tool__icon {
+  margin-bottom: 30px;
+}
+
+.tool__title {
+  margin: 0 0 16px;
+}
+
+.tool__text {
+  color: #544837;
+}
+
+.tools__button {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.strategies {
+  padding: 30px 0;
+}
+
+.strategies__title {
+  margin: 0 0 14px;
+}
+
+.strategies__description {
+  color: #544837;
+  margin: 0 0 24px;
+}
+
+.strategies__tags {
+  margin-bottom: 31px;
+}
+
+.block-shadowed {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 /*# sourceMappingURL=style.css.map */
