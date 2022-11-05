@@ -584,6 +584,30 @@ h5 {
   height: 17px;
 }
 
+.icon-round {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-round_white {
+  background-color: #ffffff;
+}
+
+.ico_phone {
+  background-image: url("../img/icons/phone.svg");
+  width: 13px;
+  height: 13px;
+}
+
+.ico_letter {
+  background-image: url("../img/icons/letter.svg");
+  width: 11px;
+  height: 8px;
+}
+
 .tags {
   display: flex;
 }
@@ -698,6 +722,32 @@ h5 {
 .contact-us {
   background: #FFEEE1;
   padding: 62px 0 82px;
+}
+
+.contact-us__title {
+  margin: 0 0 17px;
+}
+
+.contact-us__text {
+  margin: 0 0 34px;
+}
+
+.contact-us__link {
+  display: flex;
+  align-items: center;
+  margin: 0 0 19px;
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2.6rem;
+}
+.contact-us__link a {
+  margin-left: 11px;
+  color: #544837;
+  text-decoration: none;
+}
+.contact-us__link:hover a {
+  text-decoration: underline;
 }
 
 .contact-us__form input,
