@@ -447,6 +447,14 @@ h1 {
   font-style: normal;
   line-height: 5.4rem;
 }
+@media (max-width: 414px) {
+  h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 4.2rem;
+  }
+}
 
 h2 {
   font-size: 3.4rem;
@@ -524,6 +532,9 @@ h5 {
   height: 30px;
 }
 
+.logo-svg {
+  cursor: pointer;
+}
 .logo-svg:hover .logo-path {
   fill: #FF9900;
 }
@@ -635,9 +646,50 @@ h5 {
   background-color: #F5F5F5;
 }
 
+.hamburger__line, .hamburger::after, .hamburger::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #173A56;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.hamburger {
+  display: none;
+  width: 31px;
+  height: 25px;
+  position: relative;
+  margin-right: 37px;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger::before {
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+  left: 0;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
+}
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+  }
 }
 
 .header {
@@ -651,13 +703,26 @@ h5 {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding-left: 24px;
+  }
+}
+
+.header__logo-line {
+  display: flex;
+}
 
 .header__buttons > .button {
   margin-left: 14px;
 }
-
 .header__buttons > .button:first-child {
   margin-left: 0;
+}
+@media (max-width: 414px) {
+  .header__buttons {
+    display: none;
+  }
 }
 
 .layout-4-column {
@@ -723,7 +788,7 @@ h5 {
 
 .promo {
   padding-top: 30px;
-  padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .promo__wrapper {
@@ -824,6 +889,12 @@ h5 {
 }
 .navigation__link:hover {
   color: #FF9900;
+}
+
+@media (max-width: 768px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .tools__wrapper {
