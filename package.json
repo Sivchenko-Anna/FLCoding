@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Sivchenko-Anna/FLCoding#readme",
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
   }
 }
